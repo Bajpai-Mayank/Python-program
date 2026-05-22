@@ -1,8 +1,6 @@
 from pathlib import Path
 import re
 WORDS_DIR = Path(__file__).parent / "Words"
-print(WORDS_DIR)
-
 # ANSI Color Codes
 RED = "\033[31m"
 GREEN = "\033[32m"
@@ -47,7 +45,7 @@ def anagram_game(stage):
             
         prob = (max_len/txt) * 100
         
-        if (txt - len(text)) != 0:
+        if (max_len - len(text)) != 0:
             if 0 < prob <= 33:
                 print(f"{RED} Try Again ! Match Probability {prob:.2f}% {RESET}")
             elif 33 < prob <= 66:
