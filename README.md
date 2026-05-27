@@ -41,4 +41,21 @@ Focuses on Python-specific architecture, memory handling, and meta-programming.
 
 ### Part 4: Data Structures & Algorithms
 Focuses on industry-standard algorithmic patterns and memory structures.
-- [ ] **Two-Pointer Target Sum:** $O(N)$ optimized array searching
+- [ ] **Two-Pointer Target Sum:** $O(N)$ optimized array searching.
+- [ ] **Move Zeroes:** In-place array mutation.
+- [ ] **Dictionary Inversion:** Key-value swapping and collision handling.
+- [ ] **Valid Bracket Sequence:** Stack implementations (LIFO).
+- [ ] **Spiral Matrix Traversal:** 2D grid coordinate manipulation.
+- [ ] **Conway's Game of Life:** Grid-based simulation and state management.
+
+---
+
+## 🛠️ Tech Stack & Concepts Covered
+* **Language:** Python 3.x
+* **Core Concepts:** Vectorization, Pointer Manipulation, Lazy Evaluation (Generators), Decorators, Closures, Hash Maps, Stacks, and 2D Arrays.
+* **Time & Space Complexity:** Emphasis on writing optimal $O(N)$ and $O(N \log N)$ solutions over brute-force methods.
+
+---
+
+## 👨‍💻 Author
+**Mayank Bajpai** *Building scalable logic and mastering advanced structures.*
