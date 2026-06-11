@@ -32,39 +32,39 @@ if('0' in str(n) and n>99):
     chain_form(n)
 else:
     print("Max chain not possible,Invalid form")
-# Discode User @Xtrabytz solution  
-# def chain_number(number_string):
-#     digits = [int(d) for d in number_string]
+# Discode User Solution
+def chain_number(number_string):
+    digits = [int(d) for d in number_string]
    
-#     combos = []
-#     for i, digit in enumerate(digits):
-#         print(i,digit)
-#         for other_digit in digits[i+1:]:
-#             print(other_digit)
-#             combos.append(digit + other_digit)
+    combos = []
+    for i, digit in enumerate(digits):
+        print(i,digit)
+        for other_digit in digits[i+1:]:
+            print(other_digit)
+            combos.append(digit + other_digit)
 
-#     combos = list(set(combos + digits)) # Remove duplicates
+    combos = list(set(combos + digits)) # Remove duplicates
 
-#     chain = []
-#     for i, number in enumerate(sorted(combos)):
-#         if i == number:
-#             chain.append(number)
+    chain = []
+    for i, number in enumerate(sorted(combos)):
+        if i == number:
+            chain.append(number)
 
-#     print(f"Chain={chain} stops at {max(chain)}")
+    print(f"Chain={chain} stops at {max(chain)}")
 
 
-# while True:
-#     input_number = input("Number to secure: ")
+while True:
+    input_number = input("Number to secure: ")
 
-#     try: int(input_number)
-#     except ValueError:
-#         print("Input must be an integer >99 with at least one 0 digit.")
+    try: int(input_number)
+    except ValueError:
+        print("Input must be an integer >99 with at least one 0 digit.")
        
-#     if int(input_number) <= 99 or not ("0" in input_number):
-#         print("Invalid form")
-#         print("Input must be an integer >99 with at least one 0 digit")
-#     else:
-#         chain_number(input_number)
+    if int(input_number) <= 99 or not ("0" in input_number):
+        print("Invalid form")
+        print("Input must be an integer >99 with at least one 0 digit")
+    else:
+        chain_number(input_number)
 # New approach through discuss
 def find_chain_max(number_string):
     chain_max = 0
